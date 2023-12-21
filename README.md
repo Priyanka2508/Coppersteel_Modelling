@@ -11,21 +11,22 @@ Another area where the copper industry faces challenges is in capturing the lead
 
 The solution must include the following steps:
 
-Exploring skewness and outliers in the dataset.
-Transform the data into a suitable format and perform any necessary cleaning and pre-processing steps.
-ML Regression model which predicts continuous variable ‘Selling_Price’.
-ML Classification model which predicts Status: WON or LOST.
-Creating a streamlit page where you can insert each column value and you will get the Selling_Price predicted value or Status(Won/Lost)
+1. Exploring skewness and outliers in the dataset.
+2. Transform the data into a suitable format and perform any necessary cleaning and pre-processing steps.
+3. ML Regression model which predicts continuous variable ‘Selling_Price’.
+4. ML Classification model which predicts Status: WON or LOST.
+5. Creating a streamlit page where you can insert each column value and you will get the Selling_Price predicted value or Status(Won/Lost)
 
 Approach:
 
-Data Understanding: Identify the types of variables (continuous, categorical) and their distributions. Some rubbish values are present in ‘Material_Reference’ which starts with ‘00000’ value.
-Data Preprocessing: 
+1. Data Understanding: Identify the types of variables (continuous, categorical) and their distributions. Some rubbish values are present in ‘Material_Reference’ which starts with ‘00000’ value.
+2. Data Preprocessing: 
 ● Handle missing values, outliers, and skewness in the dataset. 
-● Apply appropriate data transformations, such as log transformation, boxcox transformation, or other techniques, to handle skewness in continuous variables. ● Encode categorical variables using suitable techniques, such as one-hot encoding, label encoding, or ordinal encoding, based on their nature and relationship with the target variable.
-EDA: Try visualizing outliers and skewness using Seaborn’s boxplot, distplot, violinplot.
-Feature Engineering: Engineer new features if applicable, such as aggregating or transforming existing features to create more informative representations of the data. And drop highly correlated columns.
-Model Building and Evaluation: 
+● Apply appropriate data transformations, such as log transformation, boxcox transformation, or other techniques, to handle skewness in continuous variables.
+● Encode categorical variables using suitable techniques, such as one-hot encoding, label encoding, or ordinal encoding, based on their nature and relationship with the target variable.
+3.EDA: Try visualizing outliers and skewness using Seaborn’s boxplot, distplot, violinplot.
+4.Feature Engineering: Engineer new features if applicable, such as aggregating or transforming existing features to create more informative representations of the data. And drop highly correlated columns.
+5.Model Building and Evaluation: 
 ● Split the dataset into training and testing/validation sets.
 ● Train and evaluate different classification models, such as ExtraTreesClassifier, XGBClassifier, or Logistic Regression, using appropriate evaluation metrics such as accuracy, precision, recall, F1 score, and AUC curve.
 ● Optimize model hyperparameters using techniques such as cross-validation and grid search to find the best-performing model.
