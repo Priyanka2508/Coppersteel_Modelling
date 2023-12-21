@@ -1,6 +1,5 @@
 # Coppersteel_Modelling
 
-Data: Data-set
 
 Creating Regression and Classifier Model for Copper data from Industry
 
